@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter />
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>primary_results.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="state" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv" type="V_String" />
+            <Field name="state_abbreviation" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv" type="V_String" />
+            <Field name="county" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv" type="V_String" />
+            <Field name="fips" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv" type="V_String" />
+            <Field name="party" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv" type="V_String" />
+            <Field name="candidate" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv" type="V_String" />
+            <Field name="votes" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv" type="V_String" />
+            <Field name="fraction_votes" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\primary_results.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAGHAV~1.KUL\AppData\Local\Temp\Engine_3316_204db5c43b994067873eae2e1f728fc7_\Engine_1536_fd31ccd536cc4585bcacf94768e96f16_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>pres16results.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="county" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+            <Field name="fips" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+            <Field name="cand" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+            <Field name="st" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+            <Field name="pct_report" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+            <Field name="votes" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+            <Field name="total_votes" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+            <Field name="pct" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+            <Field name="lead" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\pres16results.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAGHAV~1.KUL\AppData\Local\Temp\Engine_3316_204db5c43b994067873eae2e1f728fc7_\Engine_1536_6126190961274ade96e48ad405b18ac1_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts_dictionary.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>county_facts_dictionary.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="column_name" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts_dictionary.csv" type="V_String" />
+            <Field name="description" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts_dictionary.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAGHAV~1.KUL\AppData\Local\Temp\Engine_3316_204db5c43b994067873eae2e1f728fc7_\Engine_1536_0d7d4285b3574c87ae988dbf6dade824_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>county_facts.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="fips" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="area_name" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="state_abbreviation" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="PST045214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="PST040210" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="PST120214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="POP010210" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="AGE135214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="AGE295214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="AGE775214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="SEX255214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RHI125214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RHI225214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RHI325214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RHI425214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RHI525214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RHI625214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RHI725214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RHI825214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="POP715213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="POP645213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="POP815213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="EDU635213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="EDU685213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="VET605213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="LFE305213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="HSG010214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="HSG445213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="HSG096213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="HSG495213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="HSD410213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="HSD310213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="INC910213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="INC110213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="PVY020213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="BZA010213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="BZA110213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="BZA115213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="NES010213" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="SBO001207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="SBO315207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="SBO115207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="SBO215207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="SBO515207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="SBO415207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="SBO015207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="MAN450207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="WTN220207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RTN130207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="RTN131207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="AFN120207" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="BPS030214" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="LND110210" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+            <Field name="POP060210" size="254" source="File: C:\Users\Raghavendra.Kulkarni\Documents\ALLDOCS\Personal\UIUC\Courses\Summer 2019\Summer 2019 BADM590 Communicating with Data\Module 2\Team Assignment\2016 PRESIDENTIAL ELECTIONS DATA\county_facts.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="174" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAGHAV~1.KUL\AppData\Local\Temp\Engine_3316_204db5c43b994067873eae2e1f728fc7_\Engine_1536_a6a6b6ec10e849ac830b5c9554a72426_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="fips" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="fips" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_fips" selected="True" rename="Right_fips" />
+                <SelectField field="Right_state_abbreviation" selected="True" rename="Right_state_abbreviation" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="462" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAGHAV~1.KUL\AppData\Local\Temp\Engine_3316_204db5c43b994067873eae2e1f728fc7_\Engine_1536_1310ee62ff354f3da94df23521756ade_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.MapInput.MapInput">
+        <Position x="342" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Draw</Mode>
+          <ReferenceFile />
+          <JSMapSettings>{"drawn features":true}</JSMapSettings>
+          <Bounds>
+            <MinX>-116.191406</MinX>
+            <MaxX>-76.992188</MaxX>
+            <MinY>24.686952</MinY>
+            <MaxY>44.21371</MaxY>
+          </Bounds>
+          <NumRows value="2" />
+          <Fields>
+            <Field name="Label" />
+            <Field name="SpatialObj" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Test</c>
+              <c>{"type":"point","coordinates":[-116.191406,44.213710]}</c>
+            </r>
+            <r>
+              <c>Line</c>
+              <c>{"type":"linestring","coordinates":[[-104.589844,41.244772],[-86.484375,24.686952],[-76.992188,33.870416],[-82.617188,40.446947]]}</c>
+            </r>
+          </Data>
+          <BaseMap />
+          <ReferenceFileRecordCount>0</ReferenceFileRecordCount>
+          <ReferenceFileByteCount>0</ReferenceFileByteCount>
+          <ReferenceFileLabelField />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxMapInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxReportChartGui.AlteryxReportChartGui">
+        <Position x="534" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartType>StackedArea</ChartType>
+          <GroupingFields orderChanged="False" />
+          <LabelField>state</LabelField>
+          <GeneralStyles ThreeDInterior="false" GradientColoring="false" ChartSizeW="432" ChartSizeH="288" Resolution="2x (192 dpi)" ChartTitle="" ChartTitleSize="14" ChartSubTitle="" ChartSubTitleSize="12" ChartPrimaryFont="Microsoft Sans Serif" />
+          <TitleStyles ChangeTitleFont="false" ChartTitleFont="Microsoft Sans Serif" ChartTitleSize="14" ChartTitleColor="#000000" ChartTitleAlignment="Center" ChangeSubTitleFont="false" ChartSubTitleFont="Microsoft Sans Serif" ChartSubTitleSize="12" ChartSubTitleColor="#000000" SubTitleAlignment="Center" ChangeLegendTextFont="false" LegendTextFont="Microsoft Sans Serif" LegendTextSize="12" LegendTextColor="#000000" />
+          <Styles UseChartBorder="false" ChartBorderWidth="2" ChartBorderColor="#000000" UseAreaBorder="false" AreaBorderWidth="2" AreaBorderColor="#000000" ChartBGColor="#ffffff" ChartAreaBGColor="#ffffff" ChartInteriorBGColor="#ffffff" />
+          <ChartTypeStyles ShowChartLegend="true" LegendSeparateImage="false" LegendPosition="Top" LegendAlignment="Center" UseLegendBorder="false" LegendBorderWidth="2" LegendBorderColor="#000000" TransposeData="Record" ShowDataPointText="false" DataPointFontFaceName="Microsoft Sans Serif" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" />
+          <YAxis YAxisLabelFont="Microsoft Sans Serif" YAxisLabelSize="8" YAxisLabelColor="#000000" YAxisTitle="" YAxisTitleFont="Microsoft Sans Serif" YAxisTitleSize="10" YAxisTitleColor="#000000" YAxisShowGrid="true" YPrefix="" YPostfix="" YAxisOverrideIncrement="false" YAxisIncrement="100" YAxisOverrideBaseline="false" YAxisBaseline="0" YAxisOverrideTopline="false" YAxisTopline="1000" UseYAxisHiliteline="false" YAxisHiliteValue="0" YAxisHiliteColor="#000000" YAxisOverrideDecimalPlaces="false" YAxisNumDecimalPlaces="0" />
+          <XAxis XAxisLabelFont="Microsoft Sans Serif" XAxisLabelSize="8" XAxisLabelColor="#000000" XAxisTitle="" XAxisTitleFont="Microsoft Sans Serif" XAxisTitleSize="10" XAxisTitleColor="#000000" XAxisShowGrid="true" />
+          <StylesSeries1 ShowDataPointText="false" DataPointFontFaceName="Microsoft Sans Serif" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#b30023" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" />
+          <StylesSeries2 ShowDataPointText="false" DataPointFontFaceName="Microsoft Sans Serif" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#00488c" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" />
+          <WatermarkStyles UseWatermark="None" WatermarkText="Property of Alteryx, Inc." WatermarkTextFont="Microsoft Sans Serif" WatermarkTextSize="14" WatermarkTextColor="#000000" WatermarkOpacity="60" WatermarkImage="" />
+          <AllowMultiple value="true" />
+          <CombinationChart value="false" />
+          <SeriesList numSeries="2">
+            <Series1>
+              <Y_ValueField yValueName="AreaValue" yValueDesc="Area">[None]</Y_ValueField>
+            </Series1>
+            <Series2>
+              <Y_ValueField yValueName="AreaValue" yValueDesc="Area">[None]</Y_ValueField>
+            </Series2>
+          </SeriesList>
+          <CurrentKnownFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxReportChart.dll" EngineDllEntryPoint="AlteryxReportChartPlugin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.ReportMap.ReportMap">
+        <Position x="570" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TemporaryFileLocationXML>C:\Users\RAGHAV~1.KUL\AppData\Local\Temp\Engine_3316_204db5c43b994067873eae2e1f728fc7_\Engine_1536_2d06199e339e4667a0132b1eb2a721ee_.xml</TemporaryFileLocationXML>
+          <IsMetric value="False" />
+          <ImageWidth>8</ImageWidth>
+          <ImageHeight>6</ImageHeight>
+          <ImageResolution>1</ImageResolution>
+          <ReferenceMap />
+          <BackgroundColor>#fdfeff</BackgroundColor>
+          <DropShadow>False</DropShadow>
+          <ScaleUnits>Miles</ScaleUnits>
+          <ExpandExtent>10</ExpandExtent>
+          <MinimumWidth>0.5</MinimumWidth>
+          <DataConnections>
+            <DataConnection name="#1">
+              <ConnectionType>IncomingConnection</ConnectionType>
+              <Connection>#1</Connection>
+              <FileName />
+              <SpatialObj />
+              <GroupField>state</GroupField>
+              <ThemeField>party</ThemeField>
+              <LabelField />
+            </DataConnection>
+          </DataConnections>
+          <Layers>
+            <Layer name="Base Layers - Points" order="0">
+              <DisplayName>Base Layers - Points</DisplayName>
+              <DataConnection />
+              <LayerType>Placeholder</LayerType>
+              <ShowLabel value="False" />
+            </Layer>
+            <Layer name="Base Layers - Lines" order="1">
+              <DisplayName>Base Layers - Lines</DisplayName>
+              <DataConnection />
+              <LayerType>Placeholder</LayerType>
+              <ShowLabel value="False" />
+            </Layer>
+            <Layer name="Base Layers - Polygons" order="2">
+              <DisplayName>Base Layers - Polygons</DisplayName>
+              <DataConnection />
+              <LayerType>Placeholder</LayerType>
+              <ShowLabel value="False" />
+            </Layer>
+          </Layers>
+          <Legend>
+            <LegendStyle Position="Right" UseCommaSeparators="false" />
+          </Legend>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxReportMap" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="738" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="GridSize">1.0</Value>
+          <Value name="MaxDistance">10.0</Value>
+          <Value name="DecayFunction">1 - [Distance]/[MaxDistance]</Value>
+          <Value name="SmoothResults">True</Value>
+          <Value name="OuputStacked">True</Value>
+          <Value name="OutputDonuts">False</Value>
+          <Value name="Input.Input" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="HeatMap.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Team Assignment</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
