@@ -1,0 +1,31 @@
+# Git Merges
+
+In this lab, you'll use your knowledge of Git and Git commit history to check out an existing repo and make some changes to it. You'll also test what you learned about rolling back commits after bad changes in order to fix a script in the repo and run it to produce the correct output.
+What you'll do
+
+    Check the status and history of an existing Git repo
+    Create a branch
+    Modify content on the branch
+    Make rollback changes
+    Merge the branch
+    
+## Commands
+
+* cd ~/food-scripts #navigate to food scripts folder
+* cat favorite_foods.log
+
+### Understanding the repository
+
+* git status
+* git log
+* git branch
+
+* git branch <branch-name> #create a new branch named branch-name
+* git checkout <branch-name> #move from master branch to branch-name branch
+
+* git add <file-name> #move changes to staging area in the branch
+* git commit -m "commit message"
+
+* git revert <commit-id> #revert to this commit
+* git checkout master #switch to master from current branch
+* git merge improve-output #merge the improve-output branch to master

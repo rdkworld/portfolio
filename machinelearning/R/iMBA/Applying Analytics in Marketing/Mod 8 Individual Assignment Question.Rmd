@@ -1,0 +1,78 @@
+---
+title: "Mod 8 Individual Assignment"
+author: "Raghavendra Kulkarni MBA 592"
+date: "19/30/2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(conjoint)
+library(fpc)
+require(fpc)
+```
+
+# For this assignment, you will use the dataset provided to conduct a conjoint analysis.
+
+# Load the three datasets - Design, Levels and Response - onto the environment. The data is a survey result for backpack features. The attributes are capacity(40L, 60L, 90L), color(Black, Red and Blue) and rain cover attachment(Y and N). 
+
+```{r}
+Design <- read.csv(file = "Design.csv")
+Levels <- read.csv(file = "Levels.csv")
+Response <- read.csv(file = "Response.csv")
+```
+
+
+# Question 1 
+# 1A - Obtain the parameters of the traditional Conjoint Analysis for a single respondent.(Use caModel())
+# 1B - Describe the product profile that adds the most utility to the first respondent
+```{r}
+#1A
+model=caModel(Response[1,], Design)
+model
+```
+# Answer 1B caModel from above estimates parameters of conjoint analysis model for one respondent. The above result was a vector of estimated parameters of ** traditional conjoint analysis ** model. the co-efficients indicate the impact of each factor level on the consumer choice. 
+Product profile having Capacity of 60L(Capacity 2) and of color red(Color 2) and having no raincover attachment (RainCover 1) adds most utility to first respondent
+
+# Question 2 
+
+# 2A - Obtain the partworths for each factor level for the first 5 respondents.(Use - caPartUtilities())
+
+```{r}
+partutil <- caPartUtilities(y = Response[1:5,], x = Design, z = Levels)
+partutil
+```
+# Partial utilities are as shown above for the first 5 respondents for each factor level with intercept on first place
+
+# Question 3
+
+# 3A - Obtain the utilities of the factor levels.(Use caUtilities())
+# 3B - Describe the best product profile.
+
+```{r}
+#3A
+util <- caUtilities(y = Response, x = Design, z = Levels)
+util
+```
+# Answer 3B The best product profile is the one having most positive co-efficients which are 40 L capacity, color red and Rain Cover attachment is present (Capacity 1, Color 2 and RainCover 1)
+
+```{r}
+#Conjoint Analysis shows estimated impact on utility by each of the factor levels and also the importance of each
+analysis <- Conjoint(Response, Design, Levels)
+
+```
+# Question 4
+
+# 4A - Obtain the importance of each of the factors.(Use caImportance())
+# 4B - Create a dataframe of the factors and their importances and print the same
+
+```{r}
+#4A
+Importance <- caImportance(Response, Design)
+Factor <- c("Capacity","Color","Rain Cover Attachment")
+#4B
+FactorImp <- as.data.frame(cbind(Factor,Importance))
+FactorImp
+```

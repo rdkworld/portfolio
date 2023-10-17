@@ -1,0 +1,75 @@
+---
+title: "Mod 7 Team Rankin Assignment"
+author: "MBA 592 - Chandrika, Li, Bappa and Raghu"
+date: "10/26/2019"
+output:
+#  word_document: default
+   pdf_document: default
+# html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(psych)
+library(xlsx)
+```
+
+# For the mod 7 assignment, you will be using the survey data collected in the Module 5 Team Assignment to conduct a factor analysis.
+# Once you have recorded the survey results in an excel sheet, upload the same to the RStudio Cloud database and import the dataset to the environment. Using the imported dataset, perform the following analyses.
+
+# Question 1 – Determine the correlation between the different variables in the survey data. What are some of the significant correlations that you observe?
+
+
+```{r}
+sd <- read.xlsx("/cloud/project/TeamRankin_Restaurant_Survey_10_26_Cleaned_FA_Mod7.xlsx",1)
+data <- as.matrix(sd)
+# Showing first 10 rows of survey data
+head(sd, n=10)
+cormatrix <- cor(data)
+#cormatrix
+round(cormatrix, 2)
+
+write.xlsx(cormatrix, "cormatrix.xlsx")
+KMO(cormatrix)
+```
+# **Answer 1**
+* Moderate to strong correlation is observed between food attributes - food quality & food taste and flavor.
+* Within service attributes moderate/strong correlation is observed between courteousness of server and served promptly
+* Moderate to strong correlation is also observed amongst value attributes - food # is good value for the money, prices relative to other restaurants and portion sizes for the price paid. Correlation coefficient for these combinations are all 0.45 and above.
+
+
+# Question 2 – Determine the number of factors to be used for the factor analysis by plotting a scree plot. Justify the number of factor that you have chosen. (Use the function fa.parallel() for the scree plot)
+
+```{r}
+parallel <- fa.parallel(cormatrix, fm = 'minres', fa = 'fa',n.obs = nrow(sd))
+```
+# **Answer 2**
+# 3 factors would be used for the factor analysis. As seen on the scree plot the eigenvalue flatten out after 3 factors. Parallel analysis also suggest that the number of factors be 3. 
+
+# Question 3 – Conduct a factor analysis using the fa() function from the psych package. Use a factor loading cut off of 0.3 to see how the variables load on to different factors. What do you observe? How are the variables loading onto the different factors? 
+
+```{r}
+threefac <- fa(sd, nfactors = 3, rotate = "varimax",fm="minres")
+threefac
+print(threefac$loadings, cutoff = 0.3)
+```
+# **Answer 3**
+# We observe that the food related variables are grouped under the factor MR2, service related variables are grouped under factor MR2 and value variables are grouped under factor MR1. However, using a cutoff of 0.3 we also observe that some variables are cross loading. For example, courteousness of server variable is cross loading on MR2 factor which has food variables. Also, food is good value for money variable cross loads on MR1 which has service variables. Note, the factor loading values are mostly above 0.5 so if the cutoff value is increased over 0.5 then no cross loadings occcur indicating presence of clear and strong factors via the survey design. 
+
+# Question 4 – Eliminate the variable(s) that are cross loading i.e. loading onto two or more factors and run the factor analysis again. Briefly explain any differences in how the variables are loading onto the factors. Identify and name the factors based on the variables that load onto them.
+
+```{r}
+sd1 <- cbind(sd$Q6_1_Food_quality, sd$Q6_2_Food_taste_flavor, sd$Q6_3_choice_varitety_of_items, sd$Q7_2_Order_accuracy, sd$Q7_4_Convenient_location, sd$Q8_2_Portion_sizes_for_the_price_paid, sd$Q8_3_Prices_relative_to_other_similar_restaurants)
+
+colnames(sd1) <- c('food_quality','food_taste_flavor','choice_variety_of_items','order_accuracy','convenient_location', 'portion_size_price_paid', 'prices_relative_other_restaurant')
+
+cormatrix2 <- cor(sd1)
+parallel2 <- fa.parallel(cormatrix2, fm = 'minres', fa = 'fa',n.obs = nrow(sd1))
+
+threefac_new <- fa(sd1, nfactors = 3, rotate = "varimax",fm="minres")
+threefac_new
+print(threefac_new$loadings, cutoff = 0.3)
+
+```
+# **Answer 4**
+# We eliminate following variables found to be cross loading at 0.3 cutoff- Q7_1_served_promptly, Q7_3_Courteousness_of_server, Q8_1_Food_good_value_for_money. After re-running the parallel analysis and analyzing the scree plot we determine 3 factors are still ideal. After excluding the variables mentioned above and re-running the factor anlaysis we observe that the food variables are still grouped in MR2 factor (food factor)  with high factor loadings service variables are grouped in MR3 factor (service factor) and value variables are grouped in MR1 factor (value factor). However, we now observe the variable portion_size_price_paid cross loads with service factor MR3. Also, observe the high factor loading for the value variable prices_relative_other_restaurant which clearly indicates MR1 is a value factor

@@ -1,0 +1,15 @@
+pipeline {
+agent any
+    stages {
+		stage('Git-Rally') {
+			steps {
+				dir('/home/jenkins/vcsconn') {
+					sh 'sed -i "77s&.*&        active_repos_query  = GraphQL_Query.constructRepoActivityQuery(self.organization, ref_time, REPOS_PAGE_SIZE, COMMIT_PAGE_SIZE, branch=\'$(echo $Branch | sed -e "s/origin//g")\')&g" vcsconn/ghql_adapter.py'
+					sh 'python3.6 vcs2ac css-billing1.yml'
+					sh 'python3.6 vcs2ac css-billing2.yml'
+					sh 'python3.6 vcs2ac css-billing3.yml'
+				}
+			}
+		}
+	}
+}
