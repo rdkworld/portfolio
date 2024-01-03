@@ -8,19 +8,28 @@ This repo is a portfolio of side-projects I have done either as part of an indep
     * Lambda
 
 ## 2. Data
-## 3. Deep Learning
+
+## 3. Generative AI (Gen AI)
+* Chainlit
+    * Chainlit - Pure Python
+    * Langchain
+    * OpenAI
+* Gemini
+* GradientAI
+
+## 4. Deep Learning
 * Fast AI
 * Keras
 * Pytorch
-## 4. DevOps
+## 5. DevOps
 * IT/SysOps Automation
 * Terraform
-## 5. Machine Learning
+## 6. Machine Learning
 * Artificial Programming in Python - Nanodegree
 * Machine Learning Foundations
 * Advanced Machine Learning - Nanodegree
 * R
-## 6. Python
+## 7. Python
 * Dashboard
 * Whatsapp
 * BOT
