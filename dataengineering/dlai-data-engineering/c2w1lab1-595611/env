@@ -1,0 +1,5 @@
+DBHOST=<MySQLEndpoint>
+DBPORT=3306
+DBNAME=sakila
+DBUSER=admin
+DBPASSWORD=adminpwrd
