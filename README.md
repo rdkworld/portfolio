@@ -10,12 +10,17 @@ This repo is a portfolio of side-projects I have done either as part of an indep
 ## 2. Data
 
 ## 3. Generative AI (Gen AI)
+* AI Agents
+    * Phidata
 * Chainlit
     * Chainlit - Pure Python
     * Langchain
     * OpenAI
+* Docker Stack
 * Gemini
 * GradientAI
+* Langchain
+* Llamaindex
 
 ## 4. Deep Learning
 * Fast AI
